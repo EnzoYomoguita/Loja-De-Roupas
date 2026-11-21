@@ -1,0 +1,164 @@
+
+/*transforma tudo em caixa*/
+* {
+  box-sizing: border-box;
+}
+/*predefine o body da página inteiro com margin 0*/
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Faz os campos e botões seguirem a fonte da página */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+
+
+/*============================================DIVISÃO DO HEADER PARA O MAIN DA PÁGINA======================================================*/
+
+
+
+/*banner da página*/
+.banner {
+  height: 900px;
+  background-image: url("imagens/ADSbanner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #2b3032;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+/*altera apenas o h1*/
+.banner h1 {
+  color:#ffffff;
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 60px;
+  font-weight: normal;
+}
+
+/*altera apenas o h2*/
+.banner h2 {
+  width: 900px;
+  color: #e2e8f0;
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 60px;
+  font-weight: normal;
+}
+
+/*altera o botão (Explorar coleção)*/
+.banner a {
+  display: inline-block;
+  background-color: #00c4ed;
+  color: #06131f;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*muda cor dele*/
+.banner a:hover {
+  background-color: #67e8f9;
+}
+
+
+/*=============================================DIVISÃO DO BANNER PARA A SEÇÃO CATEGORIAS===========================================*/
+
+
+/*seta toda a aba categorias*/
+.categorias {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+/*altera apenas o <h2> do subtitulo*/
+.categorias > h2 {
+  margin: 0 0 12px;
+  color: #111;
+  text-align: center;
+  font-size: 40px;
+  font-weight: none;
+}
+
+/*altera apenas o <p> do subtitulo*/
+.categorias > p {
+  margin: 0 0 40px;
+  color: #606060;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/*criação da lista de categorias (3 colunas iguais)*/
+.lista-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/*altera o tamanho do card de cada categoria*/
+.card-categoria {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: #07131e;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*altera somente o tamanho da imagem para caber dentro do tamanho do card definido acima*/
+.card-categoria > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+
+.categoria-texto {
+  position: absolute;
+  bottom: 28px;
+  left: 24px;
+  right: 24px;
+  z-index: 1;
+}
+
+.categoria-texto h3 {
+  margin: 0 0 10px;
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 800;
+}
+
+.card-categoria:hover{ /* ativa o efeito quando o mouse está sobre o card */
+    transform: translateY(-20px); /* desloca o card 5 pixels para cima */ 
+    box-shadow: 0 8px 20px rgba(0,217, 232,0.3); /* cria uma sombra ao redor do card */
+}
+
+
+/*representaçao do footer*/
+footer {
+  text-align: center;
+  padding: 20px; 
+}
+

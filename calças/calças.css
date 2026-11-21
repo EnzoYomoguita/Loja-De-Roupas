@@ -1,0 +1,115 @@
+/*transforma tudo em caixa*/
+* {
+  box-sizing: border-box;
+}
+/*predefine o body da página inteiro com margin 0*/
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Faz os campos e botões seguirem a fonte da página */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+h1{
+    display: inline-block;
+  color: white;
+  font-weight: bold;
+}
+
+.banner {
+  height: 1100px;
+  background-image: url("../imagens/ADSfundo2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #2b3032;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.lista-produtos {
+  align-items: stretch;
+}
+
+.calças {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calças h3 {
+  /* Reserva espaço para duas linhas em todos os cards */
+  min-height: 2.6em;
+  line-height: 1.3;
+}
+
+.calças button {
+  /* Mantém os botões alinhados na parte inferior */
+  margin-top: auto;
+}
+
+.calças {
+    width: 250px; /* define a largura do card*/
+    padding: 20px; /* cria espaço interno */
+    border: 1px solid #ddd; /* adiciona uma borda */
+    border-radius: 10px; /* arredonda os cantos */
+    text-align: center; /* centraliza os textos */
+}
+.calças img{
+    width: 100%; /* ocupa toda a largura disponivel dentro do card */
+    height: 200px; /* define a altura da imagem  */
+    object-fit: contain; /* Exibe a imagem inteira, sem cortá-la */
+
+    /* definimos a largura para poder mostrar a camisa inteira para o cliente */
+}
+.calças{
+    background-color: #101820;
+    color: white;
+    padding: 12px;
+    border: 1px solid #00d9e8;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.lista-produtos{
+    display: flex;        /* ativa o flexbox  */
+    justify-content: center; /* centraliza os produtos horizontalmente */
+    gap: 20px;  /* Cria o espaço entre os produtos */
+    flex-wrap: wrap; /* Permite quebrar para outra linha quando faltar espaço */
+    align-items: flex-start;
+    /*A partir dessa organização cada produto ficara centralizado, quando adicionarmos outros. */
+}
+
+.calças button {
+    background-color: #00d9e8; /* fundo azul */
+    color: #101820; /* texto escuro*/
+    padding: 12px 18px; /* espaçamento interno */
+    border: none; /* remove a borda padrão */
+    border-radius: 8px; /* arredonda o botão */
+    cursor: pointer; /* mostra a maozinha ao passar o mouse */
+    font-weight: bold; /* deixa o texto em negrito  */
+}
+.calças:hover{ /* ativa o efeito quando o mouse está sobre o card */
+    transform: translateY(-5px); /* desloca o card 5 pixels para cima */ 
+    box-shadow: 0 8px 20px rgba(0,217, 232,0.3); /* cria uma sombra ao redor do card */
+}
+
+/* Fonte compartilhada com a página inicial. */
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+}
+button { font-family: inherit; }
+.voltar-loja { display: inline-block; margin: 16px 0; }
+
+

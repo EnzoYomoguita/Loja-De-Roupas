@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitezin dos menó</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="compartilhado/cabecalho.css">
+  <script src="js/produtos.js" defer></script>
+  <script src="js/armazenamento.js" defer></script>
+  <script src="js/cabecalho.js" defer></script>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <a class="logo" href="index.html">
+      <img src="imagens/ADSlogo.jpg" alt="ADStore — página inicial">
+    </a>
+    <nav class="menu-principal" aria-label="Categorias">
+      <a href="index.html" aria-current="page">Início</a>
+      <a href="camisetas/camisetas.html">Camisetas</a>
+      <a href="calças/calças.html">Calças</a>
+      <a href="moletons/moletons.html">Moletons</a>
+    </nav>
+    <nav class="menu-usuario" aria-label="Conta e carrinho">
+      <a href="carrinho.html">Carrinho</a>
+      <a href="login/login.html">Login</a>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <section class="banner" id="banner">
+      <h1>Seu estilo. Seu ritmo.</h1>
+      <h2>Camisas, calças e moletons para compor o seu dia.</h2>
+
+      <a href="#categorias" class="botao-colecao">
+        Explorar coleção
+      </a>
+
+    </section>
+
+    <section class="categorias" id="categorias">
+      <h2>Categorias</h2>
+      <p>Encontre sua próxima peça favorita.</p>
+
+      <div class="lista-categorias">
+        <a href="camisetas/camisetas.html" class="card-categoria">
+          <img src="imagens/ADScamisetas.png" alt="Modelo vestindo camiseta preta">
+
+          <div class="categoria-texto">
+            <h3>Camisetas</h3>
+            <span>Explorar categoria <span class="seta">→</span></span>
+          </div>
+        </a>
+
+        <a href="calças/calças.html" class="card-categoria">
+          <img src="imagens/ADS-calcas.png" alt="Calça jeans escura">
+
+          <div class="categoria-texto">
+            <h3>Calças</h3>
+            <span>Explorar categoria <span class="seta">→</span></span>
+          </div>
+        </a>
+
+        <a href="moletons/moletons.html" class="card-categoria">
+          <img src="imagens/ADSmoletons.png" alt="Modelo vestindo moletom preto">
+
+          <div class="categoria-texto">
+            <h3>Moletons</h3>
+            <span>Explorar categoria <span class="seta">→</span></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    TODOS OS DIREITOS RESERVADOS COM OS BRABOS - 2026
+  </footer>
+</body>
+
+</html>

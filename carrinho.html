@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho | ADStore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="carrinho.css">
+  <link rel="stylesheet" href="compartilhado/cabecalho.css">
+  <script src="js/produtos.js" defer></script>
+  <script src="js/armazenamento.js" defer></script>
+  <script src="js/cabecalho.js" defer></script>
+  <script src="js/carrinho.js" defer></script>
+  <script src="js/pagina-carrinho.js" defer></script>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <a class="logo" href="index.html"><img src="imagens/ADSlogo.jpg" alt="ADStore — página inicial"></a>
+    <nav class="menu-principal" aria-label="Categorias">
+      <a href="index.html">Início</a>
+      <a href="camisetas/camisetas.html">Camisetas</a>
+      <a href="calças/calças.html">Calças</a>
+      <a href="moletons/moletons.html">Moletons</a>
+    </nav>
+    <nav class="menu-usuario" aria-label="Conta e carrinho">
+      <a href="carrinho.html" aria-current="page">Carrinho</a>
+      <a href="login/login.html">Login</a>
+    </nav>
+  </header>
+  <main class="banner">
+    <h1>Meu carrinho</h1>
+    <p id="mensagem-carrinho" role="status" aria-live="polite">Carregando os itens…</p>
+    <a id="entrar-carrinho" class="botao" href="login/login.html" hidden>Entrar na conta</a>
+    <div id="itens-carrinho" class="lista-produtos"></div>
+    <section id="resumo-carrinho" class="resumo" aria-label="Resumo do carrinho" hidden>
+      <h2>Total: <span id="total-carrinho">R$ 0,00</span></h2>
+    </section>
+    <a class="voltar-loja" href="index.html">Continuar comprando</a>
+    <noscript>Ative o JavaScript para consultar seu carrinho.</noscript>
+  </main>
+  <template id="modelo-item">
+    <article class="item-carrinho">
+      <img class="imagem-produto" src="" alt="">
+      <h2 class="nome-produto"></h2>
+      <p class="preco-produto"></p>
+      <div class="controle-quantidade" role="group" aria-label="Quantidade">
+        <button class="diminuir" type="button" aria-label="Diminuir quantidade">−</button>
+        <span class="quantidade"></span>
+        <button class="aumentar" type="button" aria-label="Aumentar quantidade">+</button>
+      </div>
+      <p class="subtotal-produto"></p>
+      <button class="remover" type="button">Remover</button>
+    </article>
+  </template>
+</body>
+
+</html>

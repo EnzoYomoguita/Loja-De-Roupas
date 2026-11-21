@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b1120;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+button {
+  font-family: inherit;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.banner {
+  min-height: calc(100vh - 101px);
+  background-image: url("imagens/ADSfundo2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  margin: 20px 0 32px;
+}
+
+#mensagem-carrinho {
+  line-height: 1.6;
+}
+
+.lista-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.item-carrinho {
+  width: 250px;
+  padding: 16px;
+  background: #101820;
+  border: 1px solid #00d9e8;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagem-produto {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.nome-produto {
+  font-size: 18px;
+  line-height: 1.4;
+  min-height: 2.8em;
+}
+
+.controle-quantidade {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 8px 0;
+}
+
+button,
+.botao {
+  background: #00d9e8;
+  color: #101820;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.botao {
+  display: inline-block;
+  margin-bottom: 24px;
+  text-decoration: none;
+}
+
+button:hover,
+.botao:hover {
+  background: #67e8f9;
+}
+
+button:disabled {
+  opacity: .5;
+  cursor: default;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 4px;
+}
+
+.remover {
+  margin-top: auto;
+}
+
+.resumo {
+  margin-top: 32px;
+}
+
+.resumo h2 {
+  font-size: 22px;
+}
+
+.voltar-loja {
+  display: inline-block;
+  margin: 24px 0;
+  color: #67e8f9;
+}
+
+.menu-usuario [data-conta-logada] {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .banner {
+    padding: 24px 12px;
+  }
+
+  .item-carrinho {
+    width: 100%;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | ADStore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="../compartilhado/cabecalho.css">
+  <script src="../js/produtos.js" defer></script>
+  <script src="../js/armazenamento.js" defer></script>
+  <script src="../js/login.js" defer></script>
+  <script src="../js/cabecalho.js" defer></script>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <a class="logo" href="../index.html">
+      <img src="../imagens/ADSlogo.jpg" alt="ADStore — página inicial">
+    </a>
+    <nav class="menu-principal" aria-label="Categorias">
+      <a href="../index.html">Início</a>
+      <a href="../camisetas/camisetas.html">Camisetas</a>
+      <a href="../calças/calças.html">Calças</a>
+      <a href="../moletons/moletons.html">Moletons</a>
+    </nav>
+    <nav class="menu-usuario" aria-label="Conta e carrinho">
+      <a href="../carrinho.html">Carrinho</a>
+      <a href="login.html" aria-current="page">Login</a>
+    </nav>
+  </header>
+
+  <main class="caixa-login">
+
+    <img src="../imagens/ADSlogo.jpg" alt="Logo da ADStore" id="imagem">
+    <h1>Login da conta</h1>
+
+    <form id="form-login" method="post">
+      <label for="email">E-mail</label>
+      <input type="email" placeholder="exemplo@mail.com" id="email" name="email" autocomplete="username" required>
+
+      <label for="senha">Senha</label>
+      <input type="password" placeholder="Digite sua senha" id="senha" name="senha" autocomplete="current-password"
+        required>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <p>Não possui conta? <a href="../cadastro/cadastro.html">Cadastrar-se</a></p>
+    <a href="../index.html">Voltar para a loja</a>
+
+  </main>
+
+</body>
+
+</html>

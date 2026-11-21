@@ -1,0 +1,89 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-image: url("../imagens/ADSfundo2.png");
+    color: #e2e8f0;
+}
+
+button, input { font: inherit; }
+
+.caixa-cadastro {
+    width: calc(100% - 32px);
+    max-width: 440px;
+    margin: 48px auto;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #101820;
+    border: 1px solid #00c4ed;
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, .25);
+}
+
+#imagem {
+    width: 84px;
+    height: 84px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.caixa-cadastro h1 {
+    font-size: 28px;
+    text-align: center;
+    margin: 20px 0 28px;
+}
+
+#form_cadastro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#form_cadastro label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#form_cadastro input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #607080;
+    border-radius: 8px;
+    background: #f8fafc;
+    color: #101820;
+}
+
+#form_cadastro input:focus-visible,
+#form_cadastro button:focus-visible {
+    outline: 3px solid #67e8f9;
+    outline-offset: 2px;
+}
+
+#form_cadastro button {
+    padding: 13px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #00c4ed;
+    color: #06131f;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#form_cadastro button:hover { background-color: #67e8f9; }
+
+.caixa-cadastro p { text-align: center; line-height: 1.6; }
+.caixa-cadastro a { color: #67e8f9; }
+.caixa-cadastro a:hover { color: #fff; }
+
+@media (max-width: 480px) {
+    .caixa-cadastro { margin: 24px auto; padding: 24px 18px; }
+    .caixa-cadastro h1 { font-size: 24px; }
+}

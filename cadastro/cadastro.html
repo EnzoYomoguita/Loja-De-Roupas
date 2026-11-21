@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | ADStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="../compartilhado/cabecalho.css">
+    <script src="../js/produtos.js" defer></script>
+    <script src="../js/armazenamento.js" defer></script>
+    <script src="../js/cadastro.js" defer></script>
+    <script src="../js/cabecalho.js" defer></script>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a class="logo" href="../index.html">
+            <img src="../imagens/ADSlogo.jpg" alt="ADStore — página inicial">
+        </a>
+        <nav class="menu-principal" aria-label="Categorias">
+            <a href="../index.html">Início</a>
+            <a href="../camisetas/camisetas.html">Camisetas</a>
+            <a href="../calças/calças.html">Calças</a>
+            <a href="../moletons/moletons.html">Moletons</a>
+        </nav>
+        <nav class="menu-usuario" aria-label="Conta e carrinho">
+            <a href="../carrinho.html">Carrinho</a>
+            <a href="../login/login.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="caixa-cadastro">
+
+        <img src="../imagens/ADSlogo.jpg" alt="Logo da ADStore" id="imagem">
+        <h1>Criar conta</h1>
+
+        <form id="form_cadastro" method="post">
+            <label for="nome">Nome completo</label>
+            <input type="text" placeholder="Insira seu nome e sobrenome" name="nome" id="nome" autocomplete="name"
+                required>
+
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="exemplo@mail.com" name="email" id="email" autocomplete="email" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" placeholder="Mínimo de 8 caracteres" name="senha" id="senha"
+                autocomplete="new-password" minlength="8" required>
+
+            <label for="confirmar-senha">Confirmar senha</label>
+            <input type="password" placeholder="Repita a senha" name="confirmar-senha" id="confirmar-senha"
+                autocomplete="new-password" minlength="8" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <p>Já possui conta? <a href="../login/login.html">Fazer login</a></p>
+        <a href="../index.html">Voltar para a loja</a>
+
+    </main>
+
+</body>
+
+</html>
